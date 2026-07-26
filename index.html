@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Tools Kz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="introVideo">
+        <div class="video-wrapper">
+            <video autoplay muted playsinline preload="auto">
+                <source src="https://c.termai.cc/v161/IXMM.mp4" type="video/mp4">
+            </video>
+        </div>
+        <button class="skip-btn" id="skipIntroBtn">⏭ SKIP</button>
+    </div>
+
+    <div class="container" id="mainContent" style="display:none;">
+        <header class="header-top">
+            <div class="logo-wrapper">
+                <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+                <div class="logo-text">
+                    <span class="brand-name">All <span>Tools</span> Kz</span>
+                    <span class="brand-tagline">🔥 Premium Tools</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <nav class="header-nav">
+                    <a href="#" class="active" id="navHome">Home</a>
+                    <a href="#" id="navTools">Tools</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="search-wrapper" id="searchWrapper">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="Cari tools...">
+            <span class="search-shortcut">⌘K</span>
+        </div>
+
+        <section class="hero-main" id="heroSection">
+            <span class="badge"><i class="fas fa-bolt"></i> Free Tools • 2026</span>
+            <h1>All <span>Tools</span> Kz</h1>
+            <p>Kumpulan tools lengkap: Downloader, Maker, Tools, dan External. Semua gratis dan bisa diakses kapan saja.</p>
+            <div class="hero-logo-box">
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="https://c.termai.cc/v161/IXMM.mp4" type="video/mp4">
+                </video>
+            </div>
+            <button class="btn-start" id="btnStart"><i class="fas fa-rocket"></i> Mulai Sekarang</button>
+        </section>
+
+        <div id="category-section">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all"><i class="fas fa-th-large"></i> ALL</button>
+                <button class="category-tab" data-category="downloader"><i class="fas fa-download"></i> DOWNLOADER</button>
+                <button class="category-tab" data-category="maker"><i class="fas fa-wand-magic-sparkles"></i> MAKER</button>
+                <button class="category-tab" data-category="tools"><i class="fas fa-screwdriver-wrench"></i> TOOLS</button>
+                <button class="category-tab" data-category="external"><i class="fas fa-link"></i> EXTERNAL</button>
+            </div>
+            <div id="content-wrapper"></div>
+        </div>
+
+        <footer class="footer">
+            <span>© 2026 All Tools Kz. Made with <i class="fas fa-heart"></i> by Kaze Senpai.</span>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="tool-viewer" id="toolViewer">
+        <div class="tool-viewer-content" id="toolViewerContent">
+            <button class="tool-viewer-close" onclick="closeTool()"><i class="fas fa-times"></i></button>
+            <div id="toolViewerBody"></div>
+        </div>
+    </div>
+
+    <div class="notification-banner" id="notificationBanner" style="display:none;">
+        <div class="notif-content">
+            <div class="notif-text">
+                <i class="fas fa-bell"></i>
+                <span>Ikuti Saluran Admin untuk update terbaru!</span>
+            </div>
+            <div class="notif-actions">
+                <a href="https://whatsapp.com/channel/0029VbDJSXIKAwEqsJbhgA0s" target="_blank" class="notif-btn-follow">
+                    <i class="fab fa-whatsapp"></i> Ikuti
+                </a>
+                <button class="notif-btn-skip" id="skipNotifBtn">Skip</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
